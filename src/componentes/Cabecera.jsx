@@ -6,10 +6,11 @@ const styles = {
 }
 export default class Cabecera extends Component {
     render(){
+        const {nuevoUsuario} = this.props;
         return(
             <header>
                 <h2 style={styles.inline}>Usuarios</h2>
-                <button style={styles.inline}>Nuevo Usuario</button>
+                <button onClick={nuevoUsuario} style={styles.inline}>Nuevo Usuario</button>
             </header>
         )
     }

@@ -3,11 +3,11 @@ import Cabecera from './Cabecera.jsx'
 import Lista from './Lista'
 export default class ViewList extends Component {
     render(){
-        const {data} = this.props;
+        const {data, handleClick, nuevoUsuario } = this.props;
         return( 
             <div>
-                <Cabecera/>
-                <Lista data = {data}/>
+                <Cabecera nuevoUsuario = {nuevoUsuario}/>
+                <Lista data = {data} handleClick={handleClick}/>
             </div>
         )
     }
